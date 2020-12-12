@@ -217,7 +217,8 @@ header {
 .tools__title::before,
 .reviews__title::before,
 .work-style__title::before,
-.customers__title::before {
+.customers__title::before,
+.contacts__title::before {
   content: "";
   float: left;
   display: block;
@@ -363,7 +364,8 @@ header {
   padding-top: 69px;
 }
 
-.customers {
+.customers,
+.submit {
   margin-bottom: 40px;
 }
 
@@ -410,7 +412,35 @@ header {
   margin-bottom: 17px;
 }
 
+.agreement {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
 .submit__form-button {
   display: block;
-  margin-top: 27px;
+}
+
+.submit__checkbox {
+  width: 271px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.submit__checkbox-text {
+  margin-left: 19px;
+}
+
+.submit__checkbox-link,
+.submit__checkbox-text {
+  font-size: 400px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.contacts__content {
+  padding-top: 69px;
 }
