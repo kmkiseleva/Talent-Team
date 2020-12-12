@@ -172,12 +172,16 @@ header {
   margin-bottom: 40px;
 }
 
-.principles__title {
-  width: 545px;
+.title {
   font-weight: 800;
   font-size: 42px;
   line-height: 58px;
+}
+
+.principles__title {
+  width: 545px;
   margin-bottom: 123px;
+  padding-top: 70px;
 }
 
 .principles__title::before {
@@ -203,4 +207,92 @@ header {
   font-size: 16px;
   line-height: 28px;
   color: #2b2b2b;
+  margin-bottom: 80px;
+}
+
+.cost__title {
+  margin-bottom: 10px;
+}
+
+.cost__title::before {
+  content: "";
+  float: left;
+  display: block;
+  background: url(../img/line2.svg);
+  width: 6px;
+  height: 36px;
+  margin-right: 14px;
+  margin-top: 10px;
+}
+
+.cost__subtitle {
+  width: 365px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-left: 20px;
+  margin-bottom: 80px;
+}
+
+.cost__info {
+  width: 596px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: #727181;
+  margin-bottom: 76px;
+}
+
+.write-me {
+  margin-bottom: 40px;
+}
+
+.write-me__content {
+  background: url("../img/bg.png") no-repeat center center;
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.write-me__text {
+  width: 390px;
+  height: 198px;
+  margin-left: 100px;
+  padding-top: 51px;
+  padding-bottom: 51px;
+}
+
+.write-me__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.write-me__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.write-me__form {
+  padding-top: 122px;
+  margin-right: 100px;
+}
+
+.write-me__button {
+  width: 190px;
+  height: 55px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1a1a1a;
 }
