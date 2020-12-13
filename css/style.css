@@ -38,10 +38,14 @@ header {
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   padding-top: 22px;
   padding-bottom: 22px;
+}
+
+.header__logo {
+  margin-right: 400px;
 }
 
 .header__list {
