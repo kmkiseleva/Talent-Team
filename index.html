@@ -26,17 +26,17 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#!" class="header__link">Стоимость</a>
+                <a href="#cost" class="header__link">Стоимость</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Обо мне</a>
+                <a href="#work-style" class="header__link">Обо мне</a>
               </li>
               <li class="header__item">
-                <a href="#!" class="header__link">Контакты</a>
+                <a href="#contacts" class="header__link">Контакты</a>
               </li>
             </ul>
           </nav>
-          <button type="submit" class="header__submit">Оставить заявку</button>
+          <button type="submit" class="header__submit"> <a href="#submit" class="header-btn__link">Оставить заявку</a></button>
         </div>
       </div>
     </header>
@@ -113,22 +113,150 @@
         </div>
       </div>
     </section>
-    <section class="cost">
+    <section class="cost" id="cost">
       <div class="wrapper">
         <h2 class="cost__title title">Стоимость услуг</h2>
         <p class="cost__subtitle">
           Моя специализация — это поиск сотрудников для веб-разработки на
           современном стеке:
         </p>
-        <div class="cost__services"></div>
+        <div class="cost__services">
+          <div class="cost__row first">
+            <div class="cost__item main">
+              <h3 class="cost__item-title">Backend</h3>
+              <p class="cost__item-text">Java/Kotlin/Scala, PHP, Python, Go, </br>
+                JS, C++, Ruby, Erlang, Rust, etc.</p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">180 000
+              </h3>
+              <p class="cost__item-text">Middle Developer
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">240 000
+              </h3>
+              <p class="cost__item-text">Senior Developer
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">300 000
+              </h3>
+              <p class="cost__item-text">Lead, CTO
+              </p>
+            </div>
+          </div>
+          <div class="cost__row second">
+            <div class="cost__item main">
+              <h3 class="cost__item-title">Frontend, Mobile
+              </h3>
+              <p class="cost__item-text">React/Vue/Angular, iOS, Android</p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">200 000
+              </h3>
+              <p class="cost__item-text">Middle Developer
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">300 000
+              </h3>
+              <p class="cost__item-text">Senior Developer, Lead
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">
+              </h3>
+              <p class="cost__item-text">
+              </p>
+            </div>
+          </div>
+          <div class="cost__row third">
+            <div class="cost__item main">
+              <h3 class="cost__item-title">Infrastructure
+              </h3>
+              <p class="cost__item-text">Linux, Windows, AWS, Azure, GCP</p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">180 000
+              </h3>
+              <p class="cost__item-text">System Engineer
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">240 000
+              </h3>
+              <p class="cost__item-text">DevOps
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">320 000
+              </h3>
+              <p class="cost__item-text">DBA, Senior Devops
+              </p>
+            </div>
+          </div>
+          <div class="cost__row fourth">
+            <div class="cost__item main">
+              <h3 class="cost__item-title">QA
+              </h3>
+              <p class="cost__item-text">Manual, Mobile, Performance, Automation</p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">180 000
+              </h3>
+              <p class="cost__item-text">Senior QA
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">240 000
+              </h3>
+              <p class="cost__item-text">Senior Automation, Lead
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">
+              </h3>
+              <p class="cost__item-text">
+              </p>
+            </div>
+          </div>
+          <div class="cost__row last">
+            <div class="cost__item main">
+              <h3 class="cost__item-title">Аналитика, 
+                управление проектами
+                
+              </h3>
+              <p class="cost__item-text"></p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">180 000
+              </h3>
+              <p class="cost__item-text">PM
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">240 000
+              </h3>
+              <p class="cost__item-text">System/Business Analyst, Presale
+              </p>
+            </div>
+            <div class="cost__item">
+              <h3 class="cost__item-title">300 000
+              </h3>
+              <p class="cost__item-text">PO, Architect
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="cost__info">
           Цены указаны в рублях. Для позиций в России или для удалённой работы
-          из РФ. Не является публичной офертой. НДС не облагается в связи с
+          из РФ. </br> Не является публичной офертой. НДС не облагается в связи с
           применением УСН (п. 2 ст. 346.11 НК РФ).
         </div>
       </div>
     </section>
-    <section class="write-me">
+    <section class="write-me" id="write-me">
       <div class="wrapper">
         <div class="write-me__content">
           <div class="write-me__text">
@@ -143,7 +271,7 @@
             </p>
           </div>
           <div class="write-me__form">
-            <button class="write-me__button">Напишите мне</button>
+            <button class="write-me__button"><a href="#contacts">Напишите мне</a></button>
           </div>
         </div>
       </div>
@@ -210,7 +338,7 @@
         <h2 class="reviews__title title">Отзывы</h2>
       </div>
     </section>
-    <section class="work-style">
+    <section class="work-style" id="work-style">
       <div class="wrapper">
         <h2 class="work-style__title title">Мой стиль работы</h2>
         <div class="work-style__cols">
@@ -307,7 +435,7 @@
       </div>
       </div>
     </section>
-    <section class="submit">
+    <section class="submit" id="submit">
       <div class="wrapper">
         <div class="submit__content">
           <div class="submit__text">
@@ -353,7 +481,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="wrapper">
         <div class="contacts__content">
           <div class="contacts__socials">
