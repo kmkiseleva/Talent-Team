@@ -94,10 +94,6 @@ header {
   border: 2px solid #1a1a1a;
 }
 
-.about {
-  padding-top: 149px;
-}
-
 .about .wrapper {
   display: flex;
 }
@@ -385,6 +381,34 @@ header {
   margin-bottom: 40px;
 }
 
+.customers__logos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1064px;
+  height: 458px;
+  margin: 0 auto;
+  padding-left: 80px;
+  align-items: center;
+}
+
+.customers__link {
+  display: block;
+}
+
+.customers__link.first,
+.customers__link.second {
+  margin-right: 240px;
+}
+
+.customers__link.fourth,
+.customers__link.fifth {
+  margin-right: 230px;
+}
+
+.customers__link:nth-child(3n) {
+  margin-right: 0;
+}
+
 .submit__content {
   background: url("../img/9.png") no-repeat center center;
   max-width: 1200px;
@@ -445,16 +469,37 @@ header {
   flex-wrap: nowrap;
 }
 
-.submit__checkbox-text {
-  margin-left: 19px;
-}
-
 .submit__checkbox-link,
 .submit__checkbox-text {
   font-size: 400px;
   font-size: 12px;
   line-height: 20px;
   color: #ffffff;
+}
+
+.checkbox {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.submit__checkbox-text::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/check_box_.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
+  margin-right: 19px;
+  float: left;
+}
+
+.checkbox:checked ~ .submit__checkbox-text::before {
+  background-image: url("../img/check_box_active.svg");
 }
 
 .contacts__content {
