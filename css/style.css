@@ -350,6 +350,10 @@ header {
   width: 480px;
 }
 
+.tools__col.second {
+  margin-top: -63px;
+}
+
 .tools__bottom-image,
 .work-style__bottom-image {
   margin-bottom: 50px;
@@ -362,6 +366,10 @@ header {
 
 .work-style__item-text.last {
   margin-bottom: 50px;
+}
+
+.work-style__col.second {
+  margin-top: -43px;
 }
 
 .customers__title {
@@ -491,7 +499,6 @@ header {
 }
 
 .footer__info-item {
-  /* margin-right: 70px; */
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
