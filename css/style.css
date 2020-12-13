@@ -94,6 +94,11 @@ header {
   border: 2px solid #1a1a1a;
 }
 
+.header-btn__link {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
 .about .wrapper {
   display: flex;
 }
@@ -242,8 +247,56 @@ header {
   margin-bottom: 80px;
 }
 
+.cost__row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #d6d6da;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.cost__row.first {
+  padding-bottom: 9px;
+}
+
+.cost__row.last {
+  border: 0;
+  margin-bottom: 50px;
+}
+
+.cost__item.main {
+  margin-right: 190px;
+  width: 300px;
+  text-align: left;
+}
+
+.cost__item {
+  text-align: center;
+  width: 200px;
+}
+
+.cost__item:last-child {
+  margin-right: 0;
+}
+
+.cost__item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+.cost__item-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #727181;
+}
+
 .cost__info {
-  width: 596px;
+  width: 650px;
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
@@ -306,6 +359,13 @@ header {
   line-height: 22px;
   text-align: center;
   color: #1a1a1a;
+}
+
+.write-me__button a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .tools__title,
