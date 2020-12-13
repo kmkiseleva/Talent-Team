@@ -82,7 +82,11 @@ header {
 }
 
 .header__submit:hover,
-.header__submit:active {
+.header__submit:active,
+.write-me__button:hover,
+.write-me__button:active,
+.submit__form-button:hover,
+.submit__form-button:active {
   border: 2px solid #1a1a1a;
 }
 
@@ -443,4 +447,76 @@ header {
 
 .contacts__content {
   padding-top: 69px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.contacts__title {
+  margin-bottom: 32px;
+}
+
+.socials__item {
+  margin-bottom: 15px;
+}
+
+.socials__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #2b2b2b;
+  margin-left: 15px;
+}
+
+.socials__link.whatsup {
+  text-decoration: none;
+}
+
+.footer {
+  height: 104px;
+  background-color: #1a1a1a;
+}
+
+.footer__content {
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__information {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 755px;
+  justify-content: space-between;
+}
+
+.footer__info-item {
+  /* margin-right: 70px; */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer__info-item.first {
+  width: 215px;
+}
+
+.footer__info-item.second {
+  width: 160px;
+}
+
+.footer__info-item.third {
+  width: 255px;
+}
+
+.footer__info-item:last-child {
+  margin-right: 0;
+}
+
+.footer__link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #ffffff;
 }
