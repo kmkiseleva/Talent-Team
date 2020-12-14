@@ -420,9 +420,78 @@ header {
   margin-bottom: 50px;
 }
 
+.reviews {
+  margin-bottom: 80px;
+}
+
 .reviews__title {
   padding-top: 70px;
   margin-bottom: 45px;
+}
+
+.reviews__item {
+  /* width: 370px;
+  height: 461px; */
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(1, 54, 87, 0.11);
+  border-radius: 8px;
+  margin-right: 30px;
+}
+
+.reviews__item:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.reviwes__item-text {
+  min-height: 280px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #2b2b2b;
+}
+
+.reviwes__footer {
+  position: relative;
+}
+
+.reviwes__devider {
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.reviwes__item-author {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2b2b2b;
+  margin-bottom: 5px;
+}
+
+.reviwes__item-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #727181;
+  margin-bottom: 49px;
+}
+
+.reviwes__quotes {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+
+.reviews .owl-theme .owl-nav {
+  text-align: right;
+  margin-right: 20px;
+  position: absolute;
+  right: 0;
+  top: -90px;
+}
+
+.reviews .owl-carousel .owl-nav button.owl-prev {
+  margin-right: 15px;
 }
 
 .work-style__item-text.last {
@@ -468,6 +537,20 @@ header {
 
 .customers__link:nth-child(3n) {
   margin-right: 0;
+}
+
+.customers .owl-carousel .owl-nav button.owl-prev,
+.customers .owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 40%;
+}
+
+.customers .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+
+.customers .owl-carousel .owl-nav button.owl-next {
+  right: 0;
 }
 
 .submit__content {
