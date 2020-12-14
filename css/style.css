@@ -72,7 +72,8 @@ header {
 .header__link:hover,
 .header__link:focus,
 .header__link:active {
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 2px solid #1a1a1a;
 }
 
 .header__submit {
@@ -502,6 +503,12 @@ header {
   border: 0;
   border-bottom: 1px solid #ffffff;
   margin-bottom: 19px;
+  color: #ffffff;
+}
+
+.submit__form-field:focus,
+.submit__form-field:active {
+  border-bottom: 2px solid #ffffff;
 }
 
 .submit__form-field::placeholder {
@@ -517,6 +524,19 @@ header {
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-top: 16px;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid {
+  background: url("../img/Success.svg") no-repeat;
+  background-size: 18px;
+  background-position: right;
+}
+
+input:not(:placeholder-shown) {
+  background: url("../img/Error.svg") no-repeat;
+  background-size: 18px;
+  background-position: right;
 }
 
 .submit__form-button {
