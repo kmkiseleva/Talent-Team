@@ -1188,3 +1188,15 @@ input:not(:placeholder-shown) {
     margin-bottom: 6px;
   }
 }
+
+@media screen and (max-width: 1300px) {
+  .header__logo {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .header__nav {
+    display: none;
+  }
+}
