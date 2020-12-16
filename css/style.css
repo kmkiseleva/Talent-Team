@@ -693,7 +693,7 @@ input:not(:placeholder-shown) {
 }
 
 .footer {
-  height: 104px;
+  min-height: 104px;
   background-color: #1a1a1a;
 }
 
@@ -738,4 +738,51 @@ input:not(:placeholder-shown) {
   font-size: 12px;
   line-height: 20px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer__information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+  }
+
+  .footer__info-item {
+    line-height: 16px;
+  }
+
+  .footer__info-item.first {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+  .footer__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__information {
+    flex-wrap: wrap;
+  }
+
+  .footer__logo {
+    margin-bottom: 21px;
+  }
+
+  .footer__info-item {
+    margin-bottom: 20px;
+    margin-right: 35px;
+  }
+
+  .footer__info-item:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
 }
