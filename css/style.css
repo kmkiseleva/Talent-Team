@@ -156,11 +156,21 @@ header {
   margin-right: 8px;
 }
 
+.about__years-links:last-child {
+  width: 100px;
+}
+
 .about__years-links.active {
   color: #ffffff;
   background: #ff5058;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+}
+
+.about__years-links:hover {
+  border: 1px solid #ff5058;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .principles__list {
@@ -797,6 +807,40 @@ input:not(:placeholder-shown) {
     font-size: 14px;
     line-height: 25px;
     margin-bottom: 40px;
+  }
+
+  .cost__subtitle {
+    width: 100%;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .cost__row {
+    flex-wrap: wrap;
+    border: 0;
+  }
+
+  .cost__row.last {
+    margin-bottom: 0;
+  }
+
+  .cost__item.main {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 7px;
+  }
+
+  .cost__item {
+    display: none;
+  }
+
+  .cost__info {
+    width: 100%;
+    margin-right: 0;
   }
 
   .write-me {
