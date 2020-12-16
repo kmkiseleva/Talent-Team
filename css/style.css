@@ -746,34 +746,53 @@ input:not(:placeholder-shown) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
   }
 
   .submit__text {
-    margin-bottom: 40px;
-    margin-left: 0;
-    padding-top: 40px;
-    padding-bottom: 0;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    margin-top: -120px;
+    margin-right: 20px;
   }
 
   .submit__form {
     width: 270px;
-    height: 220px;
+    height: 230px;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 0;
   }
 
-  .agreement {
-    flex-wrap: wrap;
+  .submit__form-field {
+    padding-left: 21px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .submit__form-field::placeholder {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 13px;
   }
 
   .submit__form-button {
     width: 100%;
     margin-bottom: 15px;
     order: 1;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
   }
 
   .submit__checkbox {
     order: 2;
+  }
+
+  .agreement {
+    margin-top: 0;
+    flex-wrap: wrap;
   }
 
   .contacts__title.title {
@@ -812,6 +831,43 @@ input:not(:placeholder-shown) {
 
   .submit {
     margin-bottom: 70px;
+  }
+
+  .submit__content {
+    background: url(../img/bg-form-mob.png) no-repeat center;
+    background-size: cover;
+    border-radius: 8px;
+  }
+
+  .submit__form {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .submit__text {
+    margin: 0;
+    padding: 0;
+    width: 270px;
+    height: 140px;
+  }
+
+  .submit__title {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .submit__subtitle {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .agreement {
+    margin-bottom: 28px;
   }
 
   .contacts__image img {
