@@ -742,6 +742,46 @@ input:not(:placeholder-shown) {
 }
 
 @media screen and (max-width: 1023px) {
+  .write-me {
+    margin-bottom: 70px;
+  }
+
+  .write-me__content {
+    border-radius: 8px;
+    align-items: center;
+  }
+
+  .write-me__title {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .write-me__subtitle {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .write-me__subtitle:last-child {
+    margin-bottom: 0;
+  }
+
+  .write-me__text {
+    height: auto;
+    margin-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .write-me__form {
+    padding-top: 0;
+  }
+
+  .write-me__button {
+    width: 170px;
+  }
+
   .tools__title::before,
   .work-style__title::before,
   .customers__title::before {
@@ -859,6 +899,10 @@ input:not(:placeholder-shown) {
     padding-top: 0;
   }
 
+  .submit {
+    margin-bottom: 50px;
+  }
+
   .submit__content {
     flex-wrap: wrap;
     align-items: center;
@@ -947,8 +991,32 @@ input:not(:placeholder-shown) {
     padding: 0 10px;
   }
 
+  .write-me__content {
+    background: url(../img/bg1-mob.svg) no-repeat center;
+    background-size: cover;
+    height: 421px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .write-me__text {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .write-me__form {
+    margin: 0 65px;
+  }
+
+  .write-me__button a {
+    height: 45px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
   .submit {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 
   .submit__content {
@@ -959,15 +1027,16 @@ input:not(:placeholder-shown) {
 
   .submit__form {
     width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .submit__text {
     margin: 0;
     padding: 0;
     width: 270px;
-    height: 140px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   .submit__title {
@@ -982,10 +1051,15 @@ input:not(:placeholder-shown) {
     text-align: center;
     padding-top: 0;
     margin-bottom: 0;
+    height: 100px;
   }
 
   .agreement {
     margin-bottom: 28px;
+  }
+
+  .submit__checkbox {
+    width: 100%;
   }
 
   .contacts__image img {
