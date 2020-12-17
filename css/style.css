@@ -34,6 +34,11 @@ header {
   z-index: 100;
 }
 
+.header__burger {
+  position: relative;
+  display: none;
+}
+
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -758,16 +763,63 @@ input:not(:placeholder-shown) {
 }
 
 @media screen and (max-width: 1023px) {
-  .header__nav {
-    display: none;
-  }
-
   header {
     margin-bottom: 10px;
   }
 
+  .header__burger {
+    display: block;
+  }
+
+  .header__burger:hover {
+    opacity: 0.75;
+  }
+
+  .header__nav-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 11;
+  }
+
+  .header__nav-close:hover {
+    opacity: 0.75;
+  }
+
+  .header__nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0489db;
+    /* background-image: url("..img/bg_menu.svg"); */
+    z-index: 10;
+    padding-top: 75px;
+    padding-left: 30px;
+    transform: translateX(100%);
+    transition: 0.2s all linear;
+  }
+
+  .header__nav_active {
+    transform: translateX(0);
+  }
+
+  .header__link {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+
+  .header__link:hover {
+    border-bottom: 2px solid #ffffff;
+  }
+
   .header__wrapper {
-    background: none;
+    background: url("../img/olga_photo-mob.svg") no-repeat top 180px left;
   }
 
   .header__titles {
@@ -804,9 +856,7 @@ input:not(:placeholder-shown) {
   }
 
   .about__text {
-    width: 100%;
-    font-size: 14px;
-    line-height: 24px;
+    width: 60%;
   }
 
   .about__years {
@@ -1137,6 +1187,10 @@ input:not(:placeholder-shown) {
     padding: 0 10px;
   }
 
+  .about__text {
+    width: 300px;
+  }
+
   .write-me__content {
     background: url(../img/bg1-mob.svg) no-repeat center;
     background-size: cover;
@@ -1259,6 +1313,12 @@ input:not(:placeholder-shown) {
 
   .header__titles {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header__wrapper {
+    background: url("../img/olga_photo-mob.svg") no-repeat top 230px left;
   }
 }
 
