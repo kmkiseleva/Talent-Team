@@ -31,7 +31,6 @@ header {
   left: 0;
   width: 100%;
   transition: 0.3s linear;
-  margin-bottom: 49px;
   z-index: 100;
 }
 
@@ -42,6 +41,7 @@ header {
   justify-content: space-between;
   padding-top: 22px;
   padding-bottom: 22px;
+  background: url("../img/olga_photo.jpg") no-repeat right;
 }
 
 .header__logo {
@@ -104,21 +104,27 @@ header {
   display: flex;
 }
 
-.about__title {
+.header__title {
+  margin-top: 49px;
   font-size: 38px;
   font-weight: 800;
   line-height: 50px;
   margin-bottom: 10px;
 }
 
-.about__subtitle {
+.header__subtitle {
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
   margin-bottom: 18px;
 }
 
+.about__content {
+  width: 100%;
+}
+
 .about__text {
+  width: 490px;
   font-size: 15px;
   font-weight: 400;
   line-height: 27px;
@@ -157,7 +163,7 @@ header {
 }
 
 .about__years-links:last-child {
-  width: 100px;
+  width: 115px;
 }
 
 .about__years-links.active {
@@ -431,6 +437,7 @@ header {
 }
 
 .reviews {
+  display: none;
   margin-bottom: 80px;
 }
 
@@ -440,13 +447,11 @@ header {
 }
 
 .reviews__item {
-  /* width: 370px;
-  height: 461px; */
   padding: 30px;
+  margin-right: 30px;
+  border-radius: 8px;
   background: #ffffff;
   box-shadow: 0px 0px 14px rgba(1, 54, 87, 0.11);
-  border-radius: 8px;
-  margin-right: 30px;
 }
 
 .reviews__item:hover {
@@ -454,6 +459,7 @@ header {
 }
 
 .reviwes__item-text {
+  width: 320px;
   min-height: 280px;
   font-weight: 400;
   font-size: 14px;
@@ -483,7 +489,6 @@ header {
   font-size: 14px;
   line-height: 22px;
   color: #727181;
-  margin-bottom: 49px;
 }
 
 .reviwes__quotes {
@@ -752,35 +757,63 @@ input:not(:placeholder-shown) {
 }
 
 @media screen and (max-width: 1023px) {
-  .about .wrapper {
-    flex-wrap: wrap;
+  .header__nav {
+    display: none;
   }
 
-  .about__content {
-    flex-wrap: wrap;
+  header {
+    margin-bottom: 10px;
   }
 
-  .about__title {
+  .header__wrapper {
+    background: none;
+  }
+
+  .header__titles {
+    order: 1;
+  }
+
+  .header__button {
+    order: 2;
+    padding-bottom: 20px;
+  }
+
+  .header__submit {
+    width: 300px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .header__title {
     font-size: 26px;
     line-height: 34px;
   }
 
-  .about__subtitle {
+  .header__subtitle {
     font-size: 15px;
     line-height: 25px;
   }
 
+  .about__content {
+    flex-wrap: wrap;
+    order: 3;
+    padding-top: 40px;
+  }
+
   .about__text {
+    width: 100%;
     font-size: 14px;
     line-height: 24px;
   }
 
   .principles__title {
-    width: 100%;
+    width: 290px;
     font-size: 24px;
     line-height: 34px;
     letter-spacing: -1px;
     margin-bottom: 40px;
+    padding-top: 0;
   }
 
   .principles__list {
@@ -900,6 +933,7 @@ input:not(:placeholder-shown) {
   }
 
   .tools__title {
+    width: 200px;
     padding-top: 0;
     font-size: 24px;
     line-height: 34px;
@@ -1093,10 +1127,6 @@ input:not(:placeholder-shown) {
 }
 
 @media screen and (max-width: 768px) {
-  .about img {
-    width: 270px;
-  }
-
   .wrapper {
     padding: 0 10px;
   }
@@ -1216,6 +1246,16 @@ input:not(:placeholder-shown) {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__titles {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .footer__information {
     display: flex;
@@ -1230,17 +1270,5 @@ input:not(:placeholder-shown) {
 
   .footer__info-item.first {
     margin-bottom: 6px;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .header__logo {
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 860px) {
-  .header__nav {
-    display: none;
   }
 }
