@@ -145,6 +145,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 72px;
+  padding-top: 40px;
 }
 
 .about__years-links {
@@ -213,7 +214,7 @@ header {
   content: "";
   float: left;
   display: block;
-  background: url(../img/line.svg);
+  background: url("../img/line.svg");
   width: 6px;
   height: 92px;
   margin-right: 14px;
@@ -248,7 +249,7 @@ header {
   content: "";
   float: left;
   display: block;
-  background: url(../img/line2.svg);
+  background: url("../img/line2.svg");
   width: 6px;
   height: 36px;
   margin-right: 14px;
@@ -774,6 +775,7 @@ input:not(:placeholder-shown) {
   }
 
   .header__button {
+    padding-top: 300px;
     order: 2;
     padding-bottom: 20px;
   }
@@ -805,6 +807,10 @@ input:not(:placeholder-shown) {
     width: 100%;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .about__years {
+    padding-top: 30px;
   }
 
   .principles__title {
@@ -923,7 +929,7 @@ input:not(:placeholder-shown) {
   .work-style__title::before,
   .customers__title::before {
     content: "";
-    background: url(../img/line-cont-mob.svg);
+    background: url("../img/line-cont-mob.svg");
     width: 4px;
     height: 53px;
   }
@@ -947,7 +953,7 @@ input:not(:placeholder-shown) {
   .tools__col.first::before {
     content: "";
     display: block;
-    background: url(../img/илл-моб1.png) no-repeat;
+    background: url("../img/илл-моб1.png") no-repeat;
     width: 256px;
     height: 186px;
     margin-bottom: 19px;
@@ -956,7 +962,7 @@ input:not(:placeholder-shown) {
   .tools__col.second::before {
     content: "";
     display: block;
-    background: url(../img/илл-моб2.png) no-repeat;
+    background: url("../img/илл-моб2.png") no-repeat;
     width: 247px;
     height: 278px;
     margin-top: 40px;
@@ -1000,7 +1006,7 @@ input:not(:placeholder-shown) {
   .work-style__col.first::before {
     content: "";
     display: block;
-    background: url(../img/ill1-mob.png) no-repeat;
+    background: url("../img/ill1-mob.png") no-repeat;
     width: 246px;
     height: 206px;
     margin-bottom: 19px;
@@ -1009,7 +1015,7 @@ input:not(:placeholder-shown) {
   .work-style__col.second::before {
     content: "";
     display: block;
-    background: url(../img/ill2-mob.png) no-repeat;
+    background: url("../img/ill2-mob.png") no-repeat;
     width: 247px;
     height: 201px;
     margin-top: 40px;
@@ -1103,7 +1109,7 @@ input:not(:placeholder-shown) {
   .cost__title::before,
   .contacts__title::before {
     content: "";
-    background: url(../img/line-cont-mob.svg);
+    background: url("../img/line-cont-mob.svg");
     width: 4px;
     height: 20px;
     margin-right: 7px;
