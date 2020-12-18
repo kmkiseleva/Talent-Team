@@ -444,7 +444,6 @@ img {
 }
 
 .reviews {
-  display: none;
   margin-bottom: 80px;
 }
 
@@ -454,6 +453,8 @@ img {
 }
 
 .reviews__item {
+  width: 370px;
+  height: 461px;
   padding: 30px;
   margin-right: 30px;
   border-radius: 8px;
@@ -466,8 +467,8 @@ img {
 }
 
 .reviwes__item-text {
-  width: 320px;
-  min-height: 280px;
+  width: auto;
+  height: 280px;
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
@@ -492,6 +493,7 @@ img {
 }
 
 .reviwes__item-position {
+  width: auto;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -1450,7 +1452,55 @@ input:not(:placeholder-shown) {
   }
 }
 
-/* слайдер адаптив */
+/* слайдер отзывов адаптив */
+
+@media screen and (max-width: 1229px) {
+  .reviews .owl-theme .owl-nav {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reviews {
+    margin-bottom: 40px;
+  }
+
+  .reviews__item {
+    padding: 15px;
+  }
+
+  .reviwes__devider {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .reviews__item {
+    width: 300px;
+    height: 470px;
+  }
+
+  .reviwes__item-text {
+    height: 320px;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -1%;
+  }
+
+  .reviwes__item-author {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -1%;
+  }
+
+  .reviwes__item-position {
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: -1%;
+  }
+}
+
+/* слайдер клиентов адаптив */
 
 @media screen and (max-width: 1139px) {
   .customers__logos {
