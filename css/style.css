@@ -237,7 +237,8 @@ img {
   margin-bottom: 80px;
 }
 
-.cost__mobile {
+.cost__mobile,
+.cost__burger {
   display: none;
 }
 
@@ -1224,10 +1225,24 @@ input:not(:placeholder-shown) {
 
   .cost__row {
     padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .cost__item.main {
     display: block;
+  }
+
+  .cost__burger {
+    display: block;
+    position: absolute;
+    right: 10px;
+  }
+
+  .cost__burger:hover {
+    cursor: pointer;
+    border: 2px solid #1a1a1a;
+    border-radius: 50%;
   }
 
   .cost__item {
@@ -1240,6 +1255,7 @@ input:not(:placeholder-shown) {
     flex-wrap: wrap;
     background: #e6f5ff;
     border-radius: 8px;
+    margin-top: 15px;
     padding-left: 20px;
   }
 
@@ -1261,6 +1277,10 @@ input:not(:placeholder-shown) {
     font-size: 14px;
     line-height: 25px;
     color: #727181;
+  }
+
+  .cost__info {
+    width: auto;
   }
 
   .write-me__content {
