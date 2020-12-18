@@ -20,12 +20,40 @@
  }());
 
 (function () {
-    const costBurger = document.querySelector('.cost__burger');
-    const costMobile = document.querySelector('.cost__mobile');
-    costBurger.addEventListener('click', () => {
-        costBurger.classList.toggle('cost__burger_active');
-        costMobile.classList.toggle('cost__mobile_active');
-     });
+    const costBurgerFirst = document.querySelector('.burger-first');
+    const costMobileFirst = document.querySelector('.mobile-first');
+    costBurgerFirst.addEventListener('click', () => {
+        costBurgerFirst.classList.toggle('burger-first_active');
+        costMobileFirst.classList.toggle('mobile-first_active');
+    });
+
+    const costBurgerSecond = document.querySelector('.burger-second');
+    const costMobileSecond = document.querySelector('.mobile-second');
+    costBurgerSecond.addEventListener('click', () => {
+        costBurgerSecond.classList.toggle('burger-second_active');
+        costMobileSecond.classList.toggle('mobile-second_active');
+    });
+
+    const costBurgerThird = document.querySelector('.burger-third');
+    const costMobileThird = document.querySelector('.mobile-third');
+    costBurgerThird.addEventListener('click', () => {
+        costBurgerThird.classList.toggle('burger-third_active');
+        costMobileThird.classList.toggle('mobile-third_active');
+    });
+
+    const costBurgerFourth = document.querySelector('.burger-fourth');
+    const costMobileFourth = document.querySelector('.mobile-fourth');
+    costBurgerFourth.addEventListener('click', () => {
+        costBurgerFourth.classList.toggle('burger-fourth_active');
+        costMobileFourth.classList.toggle('mobile-fourth_active');
+    });
+
+    const costBurgerFifth = document.querySelector('.burger-fifth');
+    const costMobileFifth = document.querySelector('.mobile-fifth');
+    costBurgerFifth.addEventListener('click', () => {
+        costBurgerFifth.classList.toggle('burger-fifth_active');
+        costMobileFifth.classList.toggle('mobile-fifth_active');
+    });
 }());
 
 $(function() {
