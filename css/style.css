@@ -238,7 +238,8 @@ img {
 }
 
 .cost__mobile,
-.cost__burger {
+.cost__burger,
+.cost__close {
   display: none;
 }
 
@@ -1233,23 +1234,7 @@ input:not(:placeholder-shown) {
     display: block;
   }
 
-  .cost__burger {
-    display: block;
-    position: absolute;
-    right: 10px;
-  }
-
-  .cost__burger:hover {
-    cursor: pointer;
-    border: 2px solid #1a1a1a;
-    border-radius: 50%;
-  }
-
-  .cost__item {
-    display: none;
-  }
-
-  .cost__mobile {
+  .cost__mobile_active {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -1277,6 +1262,22 @@ input:not(:placeholder-shown) {
     font-size: 14px;
     line-height: 25px;
     color: #727181;
+  }
+
+  .cost__burger {
+    display: block;
+    position: absolute;
+    right: 10px;
+  }
+
+  .cost__burger:hover {
+    cursor: pointer;
+    border: 2px solid #1a1a1a;
+    border-radius: 50%;
+  }
+
+  .cost__item {
+    display: none;
   }
 
   .cost__info {
