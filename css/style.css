@@ -77,18 +77,8 @@ img {
   border-bottom: 2px solid #1a1a1a;
 }
 
-.header__submit {
-  width: 190px;
-  height: 55px;
-  font-weight: 600;
-  background: #ffffff;
-  border: 1px solid #1a1a1a;
-  box-sizing: border-box;
-  border-radius: 8px;
-}
-
-.header__submit:hover,
-.header__submit:active,
+.header-btn__link:hover,
+.header-btn__link:active,
 .write-me__button:hover,
 .write-me__button:active,
 .submit__form-button:hover,
@@ -97,8 +87,18 @@ img {
 }
 
 .header-btn__link {
+  display: block;
+  width: 190px;
+  height: 55px;
+  font-weight: 600;
+  background: #ffffff;
+  border: 1px solid #1a1a1a;
+  box-sizing: border-box;
+  border-radius: 8px;
   text-decoration: none;
   color: #1a1a1a;
+  text-align: center;
+  padding-top: 17px;
 }
 
 .about .wrapper {
@@ -784,11 +784,12 @@ input:not(:placeholder-shown) {
     padding-bottom: 20px;
   }
 
-  .header__submit {
+  .header-btn__link {
     width: 300px;
     height: 45px;
     font-size: 14px;
     line-height: 19px;
+    padding-top: 12px;
   }
 
   .header__title {
