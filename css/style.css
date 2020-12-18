@@ -515,7 +515,7 @@ img {
 }
 
 .reviews .owl-carousel .owl-nav button.owl-prev {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .work-style__item-text.last {
@@ -959,7 +959,13 @@ input:not(:placeholder-shown) {
   }
 
   .reviews__title {
+    font-size: 24px;
+    line-height: 34px;
     padding-top: 0;
+  }
+
+  .reviews .owl-theme .owl-nav {
+    top: -75px;
   }
 
   .work-style {
@@ -1105,6 +1111,7 @@ input:not(:placeholder-shown) {
     line-height: 34px;
   }
 
+  .reviews__title::before,
   .cost__title::before,
   .contacts__title::before {
     content: "";
@@ -1472,13 +1479,6 @@ input:not(:placeholder-shown) {
   .reviwes__devider {
     margin-bottom: 5px;
   }
-}
-
-@media screen and (max-width: 430px) {
-  .reviews__item {
-    width: 300px;
-    height: 470px;
-  }
 
   .reviwes__item-text {
     height: 320px;
@@ -1497,6 +1497,13 @@ input:not(:placeholder-shown) {
     font-size: 13px;
     line-height: 24px;
     letter-spacing: -1%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .reviews__item {
+    width: 300px;
+    height: 470px;
   }
 }
 
