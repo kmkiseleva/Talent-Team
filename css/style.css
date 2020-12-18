@@ -1223,6 +1223,27 @@ input:not(:placeholder-shown) {
     line-height: 19px;
   }
 
+  .customers {
+    margin-bottom: 70px;
+  }
+
+  .owl-theme .owl-nav {
+    margin-top: 0;
+  }
+
+  .customers .owl-carousel .owl-nav button.owl-prev,
+  .customers .owl-carousel .owl-nav button.owl-next {
+    top: 92%;
+  }
+
+  .customers .owl-carousel .owl-nav button.owl-prev {
+    left: 20%;
+  }
+
+  .customers .owl-carousel .owl-nav button.owl-next {
+    right: 20%;
+  }
+
   .submit {
     margin-bottom: 50px;
   }
@@ -1310,6 +1331,44 @@ input:not(:placeholder-shown) {
   }
 }
 
+/* слайдер адаптив */
+
+@media screen and (max-width: 1139px) {
+  .customers__logos {
+    width: 650px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+  }
+
+  .customers__link.first,
+  .customers__link.second,
+  .customers__link.fourth,
+  .customers__link.fifth {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .customers__logos {
+    width: 300px;
+    padding: 0;
+  }
+
+  .customers__link {
+    width: 100px;
+  }
+
+  .customers__link:nth-child(n) {
+    margin-right: 50px;
+  }
+
+  .customers__link:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+/* хедер адаптив */
 @media screen and (max-width: 1200px) {
   .header__logo {
     margin-right: 0;
@@ -1331,6 +1390,8 @@ input:not(:placeholder-shown) {
     background: url("../img/olga_photo-mob.svg") no-repeat top 230px left;
   }
 }
+
+/* футер адаптив */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .footer__information {
