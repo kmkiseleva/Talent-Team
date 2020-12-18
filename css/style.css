@@ -1323,6 +1323,8 @@ input:not(:placeholder-shown) {
 
   .write-me__button {
     height: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .write-me__button a {
