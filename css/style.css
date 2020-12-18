@@ -1199,6 +1199,10 @@ input:not(:placeholder-shown) {
     width: 300px;
   }
 
+  .principles__list {
+    width: auto;
+  }
+
   .write-me__content {
     background: url(../img/bg1-mob.svg) no-repeat center;
     background-size: cover;
