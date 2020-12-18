@@ -1,3 +1,33 @@
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.nav-mobile');
+    const menuCloseItem = document.querySelector('.mobile__nav-close');
+    const menuLinks = document.querySelectorAll('.mobile__link');
+    burgerItem.addEventListener('click', () => {
+       menu.classList.add('nav-mobile_active');
+    });
+    menuCloseItem.addEventListener('click', () => {
+       menu.classList.remove('nav-mobile_active');
+    });
+ 
+    if (window.innerWidth < 1023) {
+       for (let i = 0; i < menuLinks.length; i++) {
+          menuLinks[i].addEventListener('click', () => {
+             menu.classList.remove('nav-mobile_active');
+          })
+       }
+    };
+ }());
+
+(function () {
+    const costBurger = document.querySelector('.cost__burger');
+    const costMobile = document.querySelector('.cost__mobile');
+    costBurger.addEventListener('click', () => {
+        costBurger.classList.toggle('cost__burger_active');
+        costMobile.classList.toggle('cost__mobile_active');
+     });
+}());
+
 $(function() {
     $('.reviews__slider').owlCarousel({
        loop:true,
