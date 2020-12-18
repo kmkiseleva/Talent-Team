@@ -812,6 +812,10 @@ input:not(:placeholder-shown) {
     padding-top: 30px;
   }
 
+  .principles__list {
+    width: 480px;
+  }
+
   .principles__title {
     width: 290px;
     font-size: 24px;
