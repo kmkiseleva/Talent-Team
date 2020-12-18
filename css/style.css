@@ -1153,6 +1153,9 @@ input:not(:placeholder-shown) {
 
   .header__burger {
     display: block;
+    position: fixed;
+    top: 22px;
+    right: 10px;
   }
 
   .header__burger:hover {
