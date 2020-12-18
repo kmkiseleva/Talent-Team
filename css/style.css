@@ -49,6 +49,10 @@ header {
   background: url("../img/olga_photo.jpg") no-repeat right;
 }
 
+.nav-mobile {
+  display: none;
+}
+
 .header__logo {
   margin-right: 400px;
 }
@@ -1144,6 +1148,10 @@ input:not(:placeholder-shown) {
     background: url("../img/olga_photo-mob.svg") no-repeat top 180px left;
   }
 
+  .header__nav {
+    display: none;
+  }
+
   .header__burger {
     display: block;
   }
@@ -1152,47 +1160,79 @@ input:not(:placeholder-shown) {
     opacity: 0.75;
   }
 
-  .header__nav-close {
+  .mobile__list {
+    margin-bottom: 159px;
+  }
+
+  .mobile__nav-close {
     width: 40px;
     height: 40px;
     position: absolute;
     top: 20px;
-    right: 10px;
+    right: 20px;
     z-index: 11;
   }
 
-  .header__nav-close:hover {
+  .mobile__nav-close:hover {
     opacity: 0.75;
   }
 
-  .header__nav {
+  .nav-mobile {
+    display: block;
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #0489db;
-    /* background-image: url("..img/bg_menu.svg"); */
+    background: url("../img/bg_menu.svg") no-repeat;
+    background-size: cover;
     z-index: 10;
     padding-top: 75px;
-    padding-left: 30px;
+    padding-left: 50px;
     transform: translateX(100%);
     transition: 0.2s all linear;
   }
 
-  .header__nav_active {
+  .nav-mobile_active {
     transform: translateX(0);
   }
 
-  .header__link {
+  .mobile__item {
+    margin-bottom: 12px;
+  }
+
+  .mobile__link {
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
     color: #ffffff;
+    text-decoration: none;
   }
 
-  .header__link:hover {
+  .mobile__link:hover {
     border-bottom: 2px solid #ffffff;
+  }
+
+  .mobile__contacts {
+    flex-wrap: wrap;
+  }
+
+  .mobile__contacts-item {
+    margin-bottom: 5px;
+  }
+
+  .mobile__contacts-item:last-child {
+    margin-bottom: 10px;
+  }
+
+  .mobile__contacts-socials {
+    margin-right: 10px;
+  }
+
+  .mobile__contacts-link {
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
   }
 
   .about__text {
