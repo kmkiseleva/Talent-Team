@@ -1351,8 +1351,9 @@ input:not(:placeholder-shown) {
 
 @media screen and (max-width: 659px) {
   .customers__logos {
-    width: 300px;
+    width: 295px;
     padding: 0;
+    justify-content: space-evenly;
   }
 
   .customers__link {
