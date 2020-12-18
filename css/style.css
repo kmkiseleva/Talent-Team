@@ -238,8 +238,7 @@ img {
 }
 
 .cost__mobile,
-.cost__burger,
-.cost__close {
+.cost__burger {
   display: none;
 }
 
@@ -1268,12 +1267,21 @@ input:not(:placeholder-shown) {
     display: block;
     position: absolute;
     right: 10px;
+    width: 18px;
+    height: 18px;
+    background: url("../img/Plus.svg") no-repeat center;
   }
 
   .cost__burger:hover {
     cursor: pointer;
     border: 2px solid #1a1a1a;
     border-radius: 50%;
+  }
+
+  .cost__burger_active {
+    width: 18px;
+    height: 18px;
+    background: url("../img/Minus.svg") no-repeat center;
   }
 
   .cost__item {
