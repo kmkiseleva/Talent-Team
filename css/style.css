@@ -1058,6 +1058,7 @@ input:not(:placeholder-shown) {
 
   .submit__form-field {
     padding-left: 21px;
+    padding-right: 21px;
     border: 1px solid #ffffff;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -1067,6 +1068,15 @@ input:not(:placeholder-shown) {
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 13px;
+  }
+
+  input[type="text"]:valid,
+  input[type="email"]:valid {
+    background-position: center right 15px;
+  }
+
+  input:not(:placeholder-shown) {
+    background-position: center right 15px;
   }
 
   .submit__form-button {
