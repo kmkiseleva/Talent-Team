@@ -1233,7 +1233,12 @@ input:not(:placeholder-shown) {
     display: block;
   }
 
-  .cost__mobile_active {
+  .cost__mobile_active,
+  .mobile-first_active,
+  .mobile-second_active,
+  .mobile-third_active,
+  .mobile-fourth_active,
+  .mobile-fifth_active {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -1278,7 +1283,12 @@ input:not(:placeholder-shown) {
     border-radius: 50%;
   }
 
-  .cost__burger_active {
+  .cost__burger_active,
+  .burger-first_active,
+  .burger-second_active,
+  .burger-third_active,
+  .burger-fourth_active,
+  .burger-fifth_active {
     width: 18px;
     height: 18px;
     background: url("../img/Minus.svg") no-repeat center;
