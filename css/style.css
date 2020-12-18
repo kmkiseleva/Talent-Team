@@ -26,14 +26,6 @@ img {
   padding: 0 40px;
 }
 
-header {
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: 0.3s linear;
-  z-index: 100;
-}
-
 .header__burger {
   position: relative;
   display: none;
@@ -243,6 +235,10 @@ header {
   line-height: 28px;
   color: #2b2b2b;
   margin-bottom: 80px;
+}
+
+.cost__mobile {
+  display: none;
 }
 
 .cost__title {
@@ -865,27 +861,10 @@ input:not(:placeholder-shown) {
   }
 
   .cost__row {
-    flex-wrap: wrap;
-    border: 0;
-  }
-
-  .cost__row.last {
-    margin-bottom: 0;
+    border-bottom: 1px solid #2b2b2b;
   }
 
   .cost__item.main {
-    display: block;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 7px;
-  }
-
-  .cost__item {
-    display: none;
-  }
-
-  .cost__info {
-    width: 100%;
     margin-right: 0;
   }
 
@@ -1241,6 +1220,47 @@ input:not(:placeholder-shown) {
 
   .principles__list {
     width: auto;
+  }
+
+  .cost__row {
+    padding-bottom: 15px;
+  }
+
+  .cost__item.main {
+    display: block;
+  }
+
+  .cost__item {
+    display: none;
+  }
+
+  .cost__mobile {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #e6f5ff;
+    border-radius: 8px;
+    padding-left: 20px;
+  }
+
+  .cost__mobile-item {
+    width: 100%;
+    margin-bottom: 7px;
+  }
+
+  .cost__mobile-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1a1a1a;
+    margin-bottom: 3px;
+  }
+
+  .cost__mobile-item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #727181;
   }
 
   .write-me__content {
