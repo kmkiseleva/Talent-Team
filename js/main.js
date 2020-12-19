@@ -20,37 +20,42 @@
  }());
 
 (function () {
-    const costBurgerFirst = document.querySelector('.burger-first');
+    const costRowFirst = document.querySelector('.cost__row.first');
+    const costBurgerFirst = document.querySelector('.burger-first');    
     const costMobileFirst = document.querySelector('.mobile-first');
-    costBurgerFirst.addEventListener('click', () => {
+    costRowFirst.addEventListener('click', () => {
         costBurgerFirst.classList.toggle('burger-first_active');
         costMobileFirst.classList.toggle('mobile-first_active');
     });
 
+    const costRowSecond = document.querySelector('.cost__row.second');
     const costBurgerSecond = document.querySelector('.burger-second');
     const costMobileSecond = document.querySelector('.mobile-second');
-    costBurgerSecond.addEventListener('click', () => {
+    costRowSecond.addEventListener('click', () => {
         costBurgerSecond.classList.toggle('burger-second_active');
         costMobileSecond.classList.toggle('mobile-second_active');
     });
-
+    
+    const costRowThird = document.querySelector('.cost__row.third');
     const costBurgerThird = document.querySelector('.burger-third');
     const costMobileThird = document.querySelector('.mobile-third');
-    costBurgerThird.addEventListener('click', () => {
+    costRowThird.addEventListener('click', () => {
         costBurgerThird.classList.toggle('burger-third_active');
         costMobileThird.classList.toggle('mobile-third_active');
     });
 
+    const costRowFourth = document.querySelector('.cost__row.fourth');
     const costBurgerFourth = document.querySelector('.burger-fourth');
     const costMobileFourth = document.querySelector('.mobile-fourth');
-    costBurgerFourth.addEventListener('click', () => {
+    costRowFourth.addEventListener('click', () => {
         costBurgerFourth.classList.toggle('burger-fourth_active');
         costMobileFourth.classList.toggle('mobile-fourth_active');
     });
 
+    const costRowLast = document.querySelector('.cost__row.last');
     const costBurgerFifth = document.querySelector('.burger-fifth');
     const costMobileFifth = document.querySelector('.mobile-fifth');
-    costBurgerFifth.addEventListener('click', () => {
+    costRowLast.addEventListener('click', () => {
         costBurgerFifth.classList.toggle('burger-fifth_active');
         costMobileFifth.classList.toggle('mobile-fifth_active');
     });
