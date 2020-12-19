@@ -919,7 +919,7 @@ input:not(:placeholder-shown) {
   .work-style__title::before,
   .customers__title::before {
     content: "";
-    background: url("../img/line-cont-mob.svg");
+    background: url("../img/line-long-mob.svg");
     width: 4px;
     height: 53px;
   }
@@ -1498,6 +1498,7 @@ input:not(:placeholder-shown) {
   }
 
   .reviwes__item-position {
+    width: 200px;
     font-size: 13px;
     line-height: 24px;
     letter-spacing: -1%;
@@ -1569,6 +1570,14 @@ input:not(:placeholder-shown) {
 @media screen and (max-width: 399px) {
   .header__wrapper {
     background: url("../img/olga_photo-mob.svg") no-repeat top 230px left;
+  }
+}
+
+/* заголовок h1 адаптив */
+
+@media screen and (max-width: 1080px) {
+  .header__title {
+    max-width: 500px;
   }
 }
 
